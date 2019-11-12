@@ -38,10 +38,13 @@ void loop()
 {
 	if (Serial.available()) {
 		stringToPrint = Serial.readString();
+		stringToPrint = stringToPrint.substring(0, stringToPrint.length() -1);
 		Serial.println("Retrieved new value from serial");
 	}
 
+	// lcd.autoscroll();
 	printDisplay(stringToPrint);
+	// lcd.noAutoscroll();
 }
 
 void printDisplay(String displayText)
@@ -56,8 +59,14 @@ void printDisplay(String displayText)
 	// print from 0 to 9:
 	for (int charIndex = 0; charIndex < displayText.length(); charIndex++)
 	{
+		if (charIndex > 15) {
+			lcd.autoscroll();
+		}
 		lcd.print(displayText.charAt(charIndex));
 		delay(500);
+	}
+	if (displayText.length() == 16) {
+		lcd.autoscroll();
 	}
 	lcd.write(byte(0));
 	delay(500);
