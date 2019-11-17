@@ -1,0 +1,25 @@
+{
+    "arduino.path": "/Applications/Arduino.app",
+    "arduino.commandPath": "Contents/MacOS/Arduino",
+    "arduino.logLevel": "verbose",
+    "arduino.enableUSBDetection": true,
+    "arduino.disableTestingOpen": false,
+    "arduino.skipHeaderProvider": false,
+    "arduino.additionalUrls": [
+    ],
+    "arduino.defaultBaudRate": 9600,
+    "C_Cpp.loggingLevel": "Debug",
+    "files.associations": {
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "iterator": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "hashtable": "cpp"
+    }
+}

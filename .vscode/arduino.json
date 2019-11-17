@@ -1,0 +1,8 @@
+{
+    "programmer": "USBtinyISP",
+    "board": "arduino:avr:uno",
+    "sketch": "display_test/display_test.ino",
+    "port": "/dev/cu.usbmodemFA131",
+    "output": "./build",
+    "debugger": "jlink"
+}
